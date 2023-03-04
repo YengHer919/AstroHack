@@ -1,0 +1,23 @@
+body{
+    margin: 200px;
+    border-style: none;
+    background-color: red;
+}
+
+.header{
+    color:blueviolet
+}
+
+h1.header{
+    color:green;
+    text-align: center;
+    background-color: yellow;
+    height: 100 px;
+}
+h1{
+    color:purple
+}
+
+#p1{
+    color:pink
+}
