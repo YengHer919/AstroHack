@@ -1,23 +1,44 @@
-body{
-    margin: 200px;
-    border-style: none;
-    background-color: red;
-}
 
+head{
+}
+body{
+    margin: 108px;
+    border-style: none;
+    background-image: url('tree-736885__480.jpg');
+    background-repeat: no-repeat;
+    background-color:yellow;
+}
+img {
+    opacity: 0.5;
+  }
 .header{
-    color:blueviolet
+    color:red;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 70px;
 }
 
 h1.header{
     color:green;
     text-align: center;
-    background-color: yellow;
-    height: 100 px;
-}
-h1{
-    color:purple
+    background-color: lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#p1{
-    color:pink
+h1{
+
+}
+
+h2{
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    text-decoration: double;
+}
+
+h3{
+    margin: 150px;
+    color:white;
+    background-color:gold;
+    text-align: center;
+    font-size: 50px;
+    opacity: 1;
 }
