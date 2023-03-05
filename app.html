@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.1/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.2/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.2/pose.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Workout Time!</title>
+</head>
+<body class="bg-slate-600">
+
+    <navbar class="w-screen bg-slate-700 p-4 sticky flex">
+        <button class="transition-all duration-100 m-2 p-2 bg-teal-500 rounded text-3xl text-white text-centerfont-bold hover:underline hover:font-bold">option one</button>
+        <button class="transition-all duration-100 m-2 p-2 bg-teal-500 rounded text-3xl text-white text-centerfont-bold hover:underline hover:font-bold">1</button>
+        <button class="transition-all duration-100 m-2 ml-auto p-2 bg-teal-500 rounded text-3xl text-white text-centerfont-bold hover:underline hover:font-bold">option right</button>
+
+    </navbar>
+
+    
+    <div class="flex justify-center items-center">
+        <style>
+        /**
+        * ==============================================
+        * Dot Bricks
+        * ==============================================
+        */
+       .dot-bricks {
+         position: relative;
+         top: 8px;
+         left: -9999px;
+         width: 10px;
+         height: 10px;
+         border-radius: 5px;
+         background-color: #14b8a6;
+         color: #14b8a6;
+         box-shadow: 9991px -16px 0 0 #14b8a6, 9991px 0 0 0 #14b8a6, 10007px 0 0 0 #14b8a6;
+         animation: dot-bricks 2s infinite ease;
+       }
+       
+       @keyframes dot-bricks {
+         0% {
+           box-shadow: 9991px -16px 0 0 #14b8a6, 9991px 0 0 0 #14b8a6, 10007px 0 0 0 #14b8a6;
+         }
+         8.333% {
+           box-shadow: 10007px -16px 0 0 #14b8a6, 9991px 0 0 0 #14b8a6, 10007px 0 0 0 #14b8a6;
+         }
+         16.667% {
+           box-shadow: 10007px -16px 0 0 #14b8a6, 9991px -16px 0 0 #14b8a6, 10007px 0 0 0 #14b8a6;
+         }
+         25% {
+           box-shadow: 10007px -16px 0 0 #14b8a6, 9991px -16px 0 0 #14b8a6, 9991px 0 0 0 #14b8a6;
+         }
+         33.333% {
+           box-shadow: 10007px 0 0 0 #14b8a6, 9991px -16px 0 0 #14b8a6, 9991px 0 0 0 #14b8a6;
+         }
+         41.667% {
+           box-shadow: 10007px 0 0 0 #14b8a6, 10007px -16px 0 0 #14b8a6, 9991px 0 0 0 #14b8a6;
+         }
+         50% {
+           box-shadow: 10007px 0 0 0 #14b8a6, 10007px -16px 0 0 #14b8a6, 9991px -16px 0 0 #14b8a6;
+         }
+         58.333% {
+           box-shadow: 9991px 0 0 0 #14b8a6, 10007px -16px 0 0 #14b8a6, 9991px -16px 0 0 #14b8a6;
+         }
+         66.666% {
+           box-shadow: 9991px 0 0 0 #14b8a6, 10007px 0 0 0 #14b8a6, 9991px -16px 0 0 #14b8a6;
+         }
+         75% {
+           box-shadow: 9991px 0 0 0 #14b8a6, 10007px 0 0 0 #14b8a6, 10007px -16px 0 0 #14b8a6;
+         }
+         83.333% {
+           box-shadow: 9991px -16px 0 0 #14b8a6, 10007px 0 0 0 #14b8a6, 10007px -16px 0 0 #14b8a6;
+         }
+         91.667% {
+           box-shadow: 9991px -16px 0 0 #14b8a6, 9991px 0 0 0 #14b8a6, 10007px -16px 0 0 #14b8a6;
+         }
+         100% {
+           box-shadow: 9991px -16px 0 0 #14b8a6, 9991px 0 0 0 #14b8a6, 10007px 0 0 0 #14b8a6;
+         }
+       }
+       </style>
+        <canvas class="output5 mt-5 rounded" width="480px" height="480px"></canvas>
+        <div class="dot-bricks bg-teal-500"></div>
+    </div>
+    <video class="input_video5 hidden"></video>
+    
+    <div style="visibility: hidden;" class="control5"></div>
+    <script type="text/javascript" src="JsApp1/app.js"></script>
+</body>
+</html>

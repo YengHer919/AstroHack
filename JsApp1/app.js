@@ -2,13 +2,10 @@ const video5 = document.getElementsByClassName('input_video5')[0];
 const out5 = document.getElementsByClassName('output5')[0];
 const controlsElement5 = document.getElementsByClassName('control5')[0];
 const canvasCtx5 = out5.getContext('2d');
+const dotBricks = document.getElementsByClassName('dot-bricks')[0];
 
 const fpsControl = new FPS();
 
-const spinner = document.querySelector('.loading');
-spinner.ontransitionend = () => {
-  spinner.style.display = 'none';
-};
 
 function zColor(data) {
   const z = clamp(data.from.z + 0.5, 0, 1);
@@ -16,7 +13,10 @@ function zColor(data) {
 }
 
 function onResultsPose(results) {
-  document.body.classList.add('loaded');
+  dotBricks.style.visibility="hidden"
+  // console.log(results)
+  // debugger;
+
   fpsControl.tick();
 
   canvasCtx5.save();
