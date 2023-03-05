@@ -1,16 +1,12 @@
 
 head{
-
 }
 
 .header{
-    position: relative;
-    text-align:center;
-    color:blue;
+    color:red;
     font-family:'Courier New', Courier, monospace;
     font-size: 70px;
 }
-
 body { 
     position: absolute; 
     height: 100vh;
@@ -18,7 +14,7 @@ body {
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    background-image: url('TallAndSort.JPG');
+    background-image: url('FourBigStrongBoys.JPG');
     background-size: cover;
 }
 
@@ -29,28 +25,30 @@ body::before {
     right: -50px;
     bottom: -50px;
     left: -50px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(100, 159, 201, 0.5);
+}
+
+h1.header{
+    position: relative;
+    color:green;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1{
+    position: relative;
 }
 
 h2{
+    position: relative;
 }
 
 h3{
     position: relative;
-    margin: 10px;
-    color:blue;
-    text-align: left;
+    margin: 150px;
+    color:white;
+    background-color:gold;
+    text-align: center;
     font-size: 50px;
-    background-color: lightblue;
-}
-h4{
-    position: relative;
-    margin: 10px;
-    color:blue;
-    text-align: left;
-    font-size: 50px;
-    background-color: lightblue;
+    opacity: 1;
 }
