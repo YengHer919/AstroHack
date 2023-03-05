@@ -9,13 +9,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Workout Time!</title>
 </head>
-<body class="bg-slate-600">
+<body class="bg-slate-600 overflow-hidden">
 
     <navbar class="w-screen bg-slate-700 p-4 sticky flex">
-        <button class="transition-all duration-100 m-2 p-2 bg-teal-500 rounded text-3xl text-white text-centerfont-bold hover:underline hover:font-bold">option one</button>
-        <button class="transition-all duration-100 m-2 p-2 bg-teal-500 rounded text-3xl text-white text-centerfont-bold hover:underline hover:font-bold">1</button>
-        <button class="transition-all duration-100 m-2 ml-auto p-2 bg-teal-500 rounded text-3xl text-white text-centerfont-bold hover:underline hover:font-bold">option right</button>
-
+        <a class="transition-all duration-100 m-2 p-2 bg-teal-500 rounded-lg text-3xl text-white text-centerfont-bold active:bg-teal-700 hover:underline hover:font-bold" href="index.html" >Home</a>
+        <a class="transition-all duration-100 m-2 p-2 bg-teal-500 rounded-lg text-3xl text-white text-centerfont-bold active:bg-teal-700 hover:underline hover:font-bold ml-auto" href="select-workout.html">Pick new workout</a>
     </navbar>
 
     
@@ -24,6 +22,7 @@
         /**
         * ==============================================
         * Dot Bricks
+        * https://github.com/nzbin/three-dots/
         * ==============================================
         */
        .dot-bricks {
@@ -81,7 +80,7 @@
          }
        }
        </style>
-        <canvas class="output5 mt-5 rounded" width="480px" height="480px"></canvas>
+        <canvas class="output5 mt-5 rounded-[1rem]" width="480px" height="480px"></canvas>
         <div class="dot-bricks bg-teal-500"></div>
     </div>
     <video class="input_video5 hidden"></video>
