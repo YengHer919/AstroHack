@@ -3,9 +3,10 @@ head{
 }
 
 .header{
-    color:red;
-    font-family:'Courier New', Courier, monospace;
+    color:blue;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 70px;
+    text-align: center;
 }
 body { 
     position: absolute; 
@@ -14,7 +15,7 @@ body {
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    background-image: url('FourBigStrongBoys.JPG');
+    background-image: url('TallAndSort.JPG');
     background-size: cover;
 }
 
@@ -30,7 +31,7 @@ body::before {
 
 h1.header{
     position: relative;
-    color:green;
+    color:blue;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -45,10 +46,15 @@ h2{
 
 h3{
     position: relative;
-    margin: 150px;
-    color:white;
-    background-color:gold;
-    text-align: center;
+    color:blue;
+    background-color:white;
+    text-align: left;
     font-size: 50px;
-    opacity: 1;
+}
+h4{
+    position: relative;
+    color:blue;
+    background-color:white;
+    text-align: left;
+    font-size: 50px;
 }
