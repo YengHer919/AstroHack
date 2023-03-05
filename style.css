@@ -11,37 +11,43 @@ body {
     position: absolute; 
     height: 100vh;
     width: 100%;
-    background-image: url('tree-736885__480.jpg');
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-image: url('FourBigStrongBoys.JPG');
     background-size: cover;
 }
 
 body::before {
     content: "";
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(100, 159, 201, 0.25);
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
+    background-color: rgba(100, 159, 201, 0.5);
 }
 
 h1.header{
+    position: relative;
     color:green;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1{
-
+    position: relative;
 }
 
 h2{
+    position: relative;
     text-align: center;
     -webkit-text-stroke-width: 2px;
     text-decoration: double;
 }
 
 h3{
+    position: relative;
     margin: 150px;
     color:white;
     background-color:gold;
