@@ -3,6 +3,7 @@ const out5 = document.getElementsByClassName('output5')[0];
 const controlsElement5 = document.getElementsByClassName('control5')[0];
 const canvasCtx5 = out5.getContext('2d');
 const dotBricks = document.getElementsByClassName('dot-bricks')[0];
+const pushupsVid = document.getElementsByClassName('pushups-vid')[0];
 
 const fpsControl = new FPS();
 
@@ -14,6 +15,8 @@ function zColor(data) {
 
 function onResultsPose(results) {
   dotBricks.style.visibility="hidden"
+  //prevent pausing
+  pushupsVid.play()  
   // console.log(results)
   // debugger;
 
